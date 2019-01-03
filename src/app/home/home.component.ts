@@ -2,7 +2,7 @@
 import { Subscription } from 'rxjs';
 import { first } from 'rxjs/operators';
 
-import { UserService, AuthenticationService, User } from '@app/login';
+import { UserService, AuthenticationService, User } from '../login';
 
 @Component({ templateUrl: 'home.component.html' })
 export class HomeComponent implements OnInit, OnDestroy {

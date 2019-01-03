@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-xs-12">
+      <a class="btn btn-success" (click)="onNewVariable()">Neue Variable erfassen</a>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+        <app-variablen-item *ngFor="let val of variablen; let i = index" 
+          [variableObject]="val" 
+          [variableObjectId]="i">
+        </app-variablen-item>
+      </ul>
+    </div>
+  </div>

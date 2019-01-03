@@ -1,0 +1,16 @@
+<nav class="navbar navbar-dark bg-dark mb-5">
+    <a class="navbar-brand" href="/">Qlik Deployment Framework Tools</a>
+    <div class="navbar-expand mr-auto"> <!-- *ngIf="currentUser">  -->
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active">Home</a>
+        <a class="nav-item nav-link" routerLink="/variablen" routerLinkActive="active">Variablen</a>
+        <a class="nav-item nav-link" routerLink="/verwaltung" *ngIf="currentUser">Verwaltung</a>
+      </div>
+    </div>
+    <div class="nav navbar-expand nav-right"> <!-- *ngIf="currentUser">  -->
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+        <a class="nav-item nav-link" routerLink="/about">About</a>
+      </div>
+    </div>
+  </nav>
